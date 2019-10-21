@@ -25,35 +25,35 @@
             <table id="gra">
                 <tr>
                     <td onclick="postawznak(1)"  id="pole-1">
-                       1
+                    
                     </td>
                     <td onclick="postawznak(2)"   id="pole-2">
-                        2
+                        
                     </td>
                     <td onclick="postawznak(3)"  id="pole-3">
-                        3
+                        
                     </td>
                 </tr>
                 <tr>
                     <td onclick="postawznak(4)"  id="pole-4">
-                       4
+                       
                     </td>
                     <td onclick="postawznak(5)"  id="pole-5">
-                      5
+                      
                     </td>
                     <td onclick="postawznak(6)"  id="pole-6">
-                      6
+                      
                     </td>
                 </tr>
                 <tr>
                     <td onclick="postawznak(7)" id="pole-7">
-                      7
+                      
                     </td>
                     <td onclick="postawznak(8)"  id="pole-8">
-                      8
+                      
                     </td>
                     <td onclick="postawznak(9)"  id="pole-9">
-                      9
+                      
                     </td>
                 </tr>
             </table>
@@ -157,7 +157,7 @@
                                         alert("wygrały kółeczka");
                                         
                                      }
-                                     else if(pole3==2 && pole6==2 && pole69==2){
+                                     else if(pole3==2 && pole6==2 && pole9==2){
                                         alert("wygrały kółeczka");
                                         
                                      }
@@ -168,7 +168,9 @@
                                      }
                                      else if(pole3==2 && pole5==2 && pole7==2){
                                         alert("wygrały kółeczka");
-                                        reload();
+                                     }
+                                     else if(pole1 != 0 && pole2 != 0 && pole3 != 0 && pole4 != 0 && pole5 != 0 && pole6 != 0  && pole7 != 0 && pole8 != 0 && pole9 != 0 ){
+                                         alert("REMIS")
                                      }
                                      
                             }
@@ -281,6 +283,10 @@
                                         alert("wygrały krzyżyki");
                                         
                                      }
+                                     else if(pole1 != 0 && pole2 != 0 && pole3 != 0 && pole4 != 0 && pole5 != 0 && pole6 != 0  && pole7 != 0 && pole8 != 0 && pole9 != 0 ){
+                                         alert("REMIS")
+                                     }
+                                     
                                      
                             }
                         
