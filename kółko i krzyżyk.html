@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <link href="style.css" rel="stylesheet">
+        <script language="javascript" type="text/javascript">
+            var kolko = 0;
+            // 1 - krzyzyk 2- kolko
+            var pole1 = 0;
+            var pole2 = 0;
+            var pole3 = 0;
+            var pole4 = 0;
+            var pole5 = 0;
+            var pole6 = 0;
+            var pole7 = 0;
+            var pole8 = 0;
+            var pole9 = 0;
+
+            var x = "";
+          
+            </script>
+
+ </head>
+ <body id="container">
+        <div id="div-gra">
+            <table id="gra">
+                <tr>
+                    <td onclick="postawznak(1)"  id="pole-1">
+                       1
+                    </td>
+                    <td onclick="postawznak(2)"   id="pole-2">
+                        2
+                    </td>
+                    <td onclick="postawznak(3)"  id="pole-3">
+                        3
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="postawznak(4)"  id="pole-4">
+                       4
+                    </td>
+                    <td onclick="postawznak(5)"  id="pole-5">
+                      5
+                    </td>
+                    <td onclick="postawznak(6)"  id="pole-6">
+                      6
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="postawznak(7)" id="pole-7">
+                      7
+                    </td>
+                    <td onclick="postawznak(8)"  id="pole-8">
+                      8
+                    </td>
+                    <td onclick="postawznak(9)"  id="pole-9">
+                      9
+                    </td>
+                </tr>
+            </table>
+            <button onclick="location.reload()" >Zagraj ponownie</button>
+                <script language="javascript" type="text/javascript">
+                
+                     function postawznak(nr){
+                        kolko = kolko + 1;
+                            if(kolko % 2 == 1) {
+                                document.getElementById("pole-"+nr).innerHTML="o";
+                                if (nr == 1){
+                                    if(pole1 == 0){
+                                        pole1 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 2){
+                                    if(pole2 == 0){
+                                        pole2 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 3){
+                                    if(pole3 == 0){
+                                        pole3 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 4){
+                                    if(pole4 == 0){
+                                        pole4 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 5){
+                                    if(pole5 == 0){
+                                        pole5 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 6){
+                                    if(pole6 == 0){
+                                        pole6 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 7){
+                                    if(pole7 == 0){
+                                        pole7 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 8){
+                                    if(pole8 == 0){
+                                        pole8 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                if (nr == 9){
+                                    if(pole9 == 0){
+                                        pole9 = 2
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="x";kolko--
+                                    }
+                                };
+                                 if(pole1==2 && pole2==2 && pole3==2 ){
+                                        alert("wygrały kółeczka");
+                                        
+                                     }
+                                     else if(pole4==2 && pole5==2 && pole6==2){
+                                        alert("wygrały kółeczka");
+                                        
+                                     }
+                                     else if(pole7==2 && pole8==2 && pole9==2){
+                                        alert("wygrały kółeczka");
+                                        
+                                     }
+                                //pionowo
+                                     else if(pole1==2 && pole4==2 && pole7==2){
+                                        alert("wygrały kółeczka");
+                                        
+                                     }
+                                     else if(pole2==2 && pole5==2 && pole8==2){
+                                        alert("wygrały kółeczka");
+                                        
+                                     }
+                                     else if(pole3==2 && pole6==2 && pole69==2){
+                                        alert("wygrały kółeczka");
+                                        
+                                     }
+                                //na ukos
+                                     else if(pole1==2 && pole5==2 && pole9==2){
+                                         alert("wygrały kółeczka");
+                                         
+                                     }
+                                     else if(pole3==2 && pole5==2 && pole7==2){
+                                        alert("wygrały kółeczka");
+                                        reload();
+                                     }
+                                     
+                            }
+                            else{
+                                document.getElementById("pole-"+nr).innerHTML="x";
+                                if (nr == 1){
+                                    if(pole1 == 0){
+                                        pole1 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 2){
+                                    if(pole2 == 0){
+                                        pole2 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 3){
+                                    if(pole3 == 0){
+                                        pole3 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 4){
+                                    if(pole4 == 0){
+                                        pole4 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 5){
+                                    if(pole5 == 0){
+                                        pole5 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 6){
+                                    if(pole6 == 0){
+                                        pole6 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 7){
+                                    if(pole7 == 0){
+                                        pole7 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 8){
+                                    if(pole8 == 0){
+                                        pole8 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                if (nr == 9){
+                                    if(pole9 == 0){
+                                        pole9 = 1
+                                    }
+                                    else{
+                                        document.getElementById("pole-"+nr).innerHTML="o";kolko--
+                                    }
+                                };
+                                 //poziomo
+                                    if(pole1==1 && pole2==1 && pole3==1 ){
+                                        alert("wygrały krzyżyki");
+                                        
+                                     }
+                                     else if(pole4==1 && pole5==1 && pole6==1){
+                                        alert("wygrały krzyżyki");
+                                        
+                                     }
+                                     else if(pole7==1 && pole8==1 && pole9==1){
+                                        alert("wygrały krzyżyki");
+                                        
+                                     }
+                                //pionowo
+                                     else if(pole1==1 && pole4==1 && pole7==1){
+                                        alert("wygrały krzyżyki");
+                                        
+                                     }
+                                     else if(pole2==1 && pole5==1 && pole8==1){
+                                        alert("wygrały krzyżyki");
+                                       
+                                     }
+                                     else if(pole3==1 && pole6==1 && pole69==1){
+                                        alert("wygrały krzyżyki");
+                                        
+                                     }
+                                //na ukos
+                                     else if(pole1==1 && pole5==1 && pole9==1){
+                                         alert("wygrały krzyżyki");
+                                         
+                                     }
+                                     else if(pole3==1 && pole5==1 && pole7==1){
+                                        alert("wygrały krzyżyki");
+                                        
+                                     }
+                                     
+                            }
+                        
+                        }
+                        
+                    </script>
+                    <script language="javascript" type="text/javascript">
+                     function reload(){
+                         kolko = 0;
+                         pole1 = 0;
+                         pole2 = 0;
+                         pole3 = 0;
+                         pole4 = 0;
+                         pole5 = 0;
+                         pole6 = 0;
+                         pole7 = 0;
+                         pole8 = 0;
+                         pole9 = 0;
+                         if(i=0; i<9 ;i++){
+                            document.getElementById("pole-"+i).innerHTML="";
+                         }
+                     }
+                    }
+                </script>
+        </div>
+
+ </body>
+
+</html>
